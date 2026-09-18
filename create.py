@@ -1,7 +1,6 @@
 from conexao_criar_tabela import conn, cursor
 
 
-
 def inserir_registro(conn, cursor, nome, email):
     data = (nome, email)
     cursor.execute("INSERT INTO clientes(nome, email) VALUES (?,?)", data)
