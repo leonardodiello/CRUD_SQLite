@@ -8,4 +8,5 @@ id = int(input("Digite o ID do cliente que deseja recuperar: "))
 
 cliente = recuperar_cliente(cursor, id)
 
-print(cliente)
+for cliente in cliente:
+    print(f"ID: {cliente[0]}\nNome: {cliente[1]}\nEmail: {cliente[2]}\n")
